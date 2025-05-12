@@ -1,0 +1,212 @@
+# vsim Tb_Alu -c -do "run -all" 
+# Start time: 15:31:13 on Dec 05,2024
+# Loading work.Tb_Alu
+# Loading work.Alu
+# Loading work.add_sub
+# Loading work.signMagnitudeTo2sComplementConverter
+# Loading work.add_sub_2sComplement_4bits
+# Loading work.four_bit_adder
+# Loading work.TwosComplementTosignMagnitudeConverter
+# Loading work.multioper
+# Loading work.half_adder
+# Loading work.Remoper
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'adder'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /Tb_Alu/DUT/unit1/add_sub_operation/adder File: add_sub.v Line: 50
+# ** Warning: (vsim-3722) add_sub.v(50): [TFMPC] - Missing connection for port 'carry'.
+# run -all
+# [all Passed] A=000 , B=000, A*B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=000 , B=001, A*B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=000 , B=010, A*B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=000 , B=011, A*B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=000 , B=101, A*B=result=10000, signed flag=1, Zero flag=1
+# [all Passed] A=000 , B=110, A*B=result=10000, signed flag=1, Zero flag=1
+# [all Passed] A=000 , B=111, A*B=result=10000, signed flag=1, Zero flag=1
+# [all Passed] A=001 , B=000, A*B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=001 , B=001, A*B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=001 , B=010, A*B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=001 , B=011, A*B=result=00011, signed flag=0, Zero flag=0
+# [all Passed] A=001 , B=101, A*B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=001 , B=110, A*B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=001 , B=111, A*B=result=10011, signed flag=1, Zero flag=0
+# [all Passed] A=010 , B=000, A*B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=010 , B=001, A*B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=010 , B=010, A*B=result=00100, signed flag=0, Zero flag=0
+# [all Passed] A=010 , B=011, A*B=result=00110, signed flag=0, Zero flag=0
+# [all Passed] A=010 , B=101, A*B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=010 , B=110, A*B=result=10100, signed flag=1, Zero flag=0
+# [all Passed] A=010 , B=111, A*B=result=10110, signed flag=1, Zero flag=0
+# [all Passed] A=011 , B=000, A*B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=011 , B=001, A*B=result=00011, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=010, A*B=result=00110, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=011, A*B=result=01001, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=101, A*B=result=10011, signed flag=1, Zero flag=0
+# [all Passed] A=011 , B=110, A*B=result=10110, signed flag=1, Zero flag=0
+# [all Passed] A=011 , B=111, A*B=result=11001, signed flag=1, Zero flag=0
+# [all Passed] A=101 , B=000, A*B=result=10000, signed flag=1, Zero flag=1
+# [all Passed] A=101 , B=001, A*B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=101 , B=010, A*B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=101 , B=011, A*B=result=10011, signed flag=1, Zero flag=0
+# [all Passed] A=101 , B=101, A*B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=101 , B=110, A*B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=101 , B=111, A*B=result=00011, signed flag=0, Zero flag=0
+# [all Passed] A=110 , B=000, A*B=result=10000, signed flag=1, Zero flag=1
+# [all Passed] A=110 , B=001, A*B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=110 , B=010, A*B=result=10100, signed flag=1, Zero flag=0
+# [all Passed] A=110 , B=011, A*B=result=10110, signed flag=1, Zero flag=0
+# [all Passed] A=110 , B=101, A*B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=110 , B=110, A*B=result=00100, signed flag=0, Zero flag=0
+# [all Passed] A=110 , B=111, A*B=result=00110, signed flag=0, Zero flag=0
+# [all Passed] A=111 , B=000, A*B=result=10000, signed flag=1, Zero flag=1
+# [all Passed] A=111 , B=001, A*B=result=10011, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=010, A*B=result=10110, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=011, A*B=result=11001, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=101, A*B=result=00011, signed flag=0, Zero flag=0
+# [all Passed] A=111 , B=110, A*B=result=00110, signed flag=0, Zero flag=0
+# [all Passed] A=111 , B=111, A*B=result=01001, signed flag=0, Zero flag=0
+# [all Passed] A=000 , B=000,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=1
+# [all Passed] A=000 , B=001,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=000 , B=010,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=000 , B=011,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=000 , B=101,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=000 , B=110,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=000 , B=111,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=001 , B=000,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=1
+# [all Passed] A=001 , B=001,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=001 , B=010,  A mod B=result=00001, signed flag=0, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=001 , B=011,  A mod B=result=00001, signed flag=0, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=001 , B=101,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=001 , B=110,  A mod B=result=00001, signed flag=0, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=001 , B=111,  A mod B=result=00001, signed flag=0, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=010 , B=000,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=1
+# [all Passed] A=010 , B=001,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=010 , B=010,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=010 , B=011,  A mod B=result=00010, signed flag=0, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=010 , B=101,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=010 , B=110,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=010 , B=111,  A mod B=result=00010, signed flag=0, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=011 , B=000,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=1
+# [all Passed] A=011 , B=001,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=011 , B=010,  A mod B=result=00001, signed flag=0, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=011 , B=011,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=011 , B=101,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=011 , B=110,  A mod B=result=00001, signed flag=0, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=011 , B=111,  A mod B=result=00000, signed flag=0, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=101 , B=000,  A mod B=result=10000, signed flag=1, Zero flag=1, div_by_Zero flag=1
+# [all Passed] A=101 , B=001,  A mod B=result=10000, signed flag=1, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=101 , B=010,  A mod B=result=10001, signed flag=1, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=101 , B=011,  A mod B=result=10001, signed flag=1, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=101 , B=101,  A mod B=result=10000, signed flag=1, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=101 , B=110,  A mod B=result=10001, signed flag=1, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=101 , B=111,  A mod B=result=10001, signed flag=1, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=110 , B=000,  A mod B=result=10000, signed flag=1, Zero flag=1, div_by_Zero flag=1
+# [all Passed] A=110 , B=001,  A mod B=result=10000, signed flag=1, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=110 , B=010,  A mod B=result=10000, signed flag=1, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=110 , B=011,  A mod B=result=10010, signed flag=1, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=110 , B=101,  A mod B=result=10000, signed flag=1, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=110 , B=110,  A mod B=result=10000, signed flag=1, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=110 , B=111,  A mod B=result=10010, signed flag=1, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=111 , B=000,  A mod B=result=10000, signed flag=1, Zero flag=1, div_by_Zero flag=1
+# [all Passed] A=111 , B=001,  A mod B=result=10000, signed flag=1, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=111 , B=010,  A mod B=result=10001, signed flag=1, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=111 , B=011,  A mod B=result=10000, signed flag=1, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=111 , B=101,  A mod B=result=10000, signed flag=1, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=111 , B=110,  A mod B=result=10001, signed flag=1, Zero flag=0, div_by_Zero flag=0
+# [all Passed] A=111 , B=111,  A mod B=result=10000, signed flag=1, Zero flag=1, div_by_Zero flag=0
+# [all Passed] A=000 , B=000, A+B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=000 , B=001, A+B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=000 , B=010, A+B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=000 , B=011, A+B=result=00011, signed flag=0, Zero flag=0
+# [all Passed] A=000 , B=101, A+B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=000 , B=110, A+B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=000 , B=111, A+B=result=10011, signed flag=1, Zero flag=0
+# [all Passed] A=001 , B=000, A+B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=001 , B=001, A+B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=001 , B=010, A+B=result=00011, signed flag=0, Zero flag=0
+# [all Passed] A=001 , B=011, A+B=result=00100, signed flag=0, Zero flag=0
+# [all Passed] A=001 , B=101, A+B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=001 , B=110, A+B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=001 , B=111, A+B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=010 , B=000, A+B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=010 , B=001, A+B=result=00011, signed flag=0, Zero flag=0
+# [all Passed] A=010 , B=010, A+B=result=00100, signed flag=0, Zero flag=0
+# [all Passed] A=010 , B=011, A+B=result=00101, signed flag=0, Zero flag=0
+# [all Passed] A=010 , B=101, A+B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=010 , B=110, A+B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=010 , B=111, A+B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=011 , B=000, A+B=result=00011, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=001, A+B=result=00100, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=010, A+B=result=00101, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=011, A+B=result=00110, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=101, A+B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=110, A+B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=111, A+B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=101 , B=000, A+B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=101 , B=001, A+B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=101 , B=010, A+B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=101 , B=011, A+B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=101 , B=101, A+B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=101 , B=110, A+B=result=10011, signed flag=1, Zero flag=0
+# [all Passed] A=101 , B=111, A+B=result=10100, signed flag=1, Zero flag=0
+# [all Passed] A=110 , B=000, A+B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=110 , B=001, A+B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=110 , B=010, A+B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=110 , B=011, A+B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=110 , B=101, A+B=result=10011, signed flag=1, Zero flag=0
+# [all Passed] A=110 , B=110, A+B=result=10100, signed flag=1, Zero flag=0
+# [all Passed] A=110 , B=111, A+B=result=10101, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=000, A+B=result=10011, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=001, A+B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=010, A+B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=011, A+B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=111 , B=101, A+B=result=10100, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=110, A+B=result=10101, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=111, A+B=result=10110, signed flag=1, Zero flag=0
+# [all Passed] A=000 , B=000, A-B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=000 , B=001, A-B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=000 , B=010, A-B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=000 , B=011, A-B=result=10011, signed flag=1, Zero flag=0
+# [all Passed] A=000 , B=101, A-B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=000 , B=110, A-B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=000 , B=111, A-B=result=00011, signed flag=0, Zero flag=0
+# [all Passed] A=001 , B=000, A-B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=001 , B=001, A-B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=001 , B=010, A-B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=001 , B=011, A-B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=001 , B=101, A-B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=001 , B=110, A-B=result=00011, signed flag=0, Zero flag=0
+# [all Passed] A=001 , B=111, A-B=result=00100, signed flag=0, Zero flag=0
+# [all Passed] A=010 , B=000, A-B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=010 , B=001, A-B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=010 , B=010, A-B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=010 , B=011, A-B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=010 , B=101, A-B=result=00011, signed flag=0, Zero flag=0
+# [all Passed] A=010 , B=110, A-B=result=00100, signed flag=0, Zero flag=0
+# [all Passed] A=010 , B=111, A-B=result=00101, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=000, A-B=result=00011, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=001, A-B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=010, A-B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=011, A-B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=011 , B=101, A-B=result=00100, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=110, A-B=result=00101, signed flag=0, Zero flag=0
+# [all Passed] A=011 , B=111, A-B=result=00110, signed flag=0, Zero flag=0
+# [all Passed] A=101 , B=000, A-B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=101 , B=001, A-B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=101 , B=010, A-B=result=10011, signed flag=1, Zero flag=0
+# [all Passed] A=101 , B=011, A-B=result=10100, signed flag=1, Zero flag=0
+# [all Passed] A=101 , B=101, A-B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=101 , B=110, A-B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=101 , B=111, A-B=result=00010, signed flag=0, Zero flag=0
+# [all Passed] A=110 , B=000, A-B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=110 , B=001, A-B=result=10011, signed flag=1, Zero flag=0
+# [all Passed] A=110 , B=010, A-B=result=10100, signed flag=1, Zero flag=0
+# [all Passed] A=110 , B=011, A-B=result=10101, signed flag=1, Zero flag=0
+# [all Passed] A=110 , B=101, A-B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=110 , B=110, A-B=result=00000, signed flag=0, Zero flag=1
+# [all Passed] A=110 , B=111, A-B=result=00001, signed flag=0, Zero flag=0
+# [all Passed] A=111 , B=000, A-B=result=10011, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=001, A-B=result=10100, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=010, A-B=result=10101, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=011, A-B=result=10110, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=101, A-B=result=10010, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=110, A-B=result=10001, signed flag=1, Zero flag=0
+# [all Passed] A=111 , B=111, A-B=result=00000, signed flag=0, Zero flag=1
